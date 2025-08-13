@@ -1,0 +1,144 @@
+@font-face {
+    font-family: Determination;
+    src: url("font/DTM-Sans.otf");
+}
+
+@font-face {
+    font-family: MonsterFriend;
+    src: url("font/MonsterFriendBack.otf");
+}
+
+@font-face {
+    font-family: DMG;
+    src: url("font/dmgNumbers.ttf");
+}
+
+* {
+    color: #ffffff;
+
+    font-family: Determination;
+}
+
+body {
+    background-color: #000000;
+}
+
+
+p {
+    margin-top: 1px;
+    margin-bottom: 1px;
+
+    font-size: large;
+}
+
+a {
+    color: blue;
+}
+
+.grid {
+    margin: 30px;
+
+    display: grid;
+    grid-template-columns: 400px 1fr 400px;
+}
+
+.grid #description {
+    padding: 30px;
+}
+
+.grid #rightSide {
+    padding: 30px;
+}
+
+#leftSide {
+    align-self: stretch;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    border-right: 5px solid #ffffff;
+}
+
+#rightSide {
+    border-left: 5px solid #ffffff;
+}
+
+#subt {
+    margin-top: 13px;
+    margin-bottom: 10px;
+
+    color: #FFFF00;
+    font-size: 20px;
+    font-family: Determination;
+}
+
+#pfp {
+    margin-bottom: 20px;
+
+    width: auto;
+    height: auto;
+
+    padding: 5px;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 7px;
+    border-radius: 50%;
+    display: block;
+}
+
+#pfpHit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+
+    display: none;
+}
+
+#dmgDealt {
+    display: none;
+}
+
+#healthBar {
+    margin-bottom: 10px;
+
+    width: 250px;
+    background-color: #404040;
+
+    display: none;
+}
+
+#healthBarProgress {
+    width: 100%;
+    height: 30px;
+
+    background-color: #02FD0C;
+}
+
+#FIGHT {
+    margin-top: 15px;
+}
+
+#FIGHT:hover img {
+    content: url("img/UndertaleFightHover.png");
+}
+
+#FIGHT:active img {
+    content: url("img/UndertaleFightClick.png");
+}
+
+#pfpWrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.headerName {
+    font-size: 50px;
+}
+
+.name {
+    font-size: 25px;
+}
