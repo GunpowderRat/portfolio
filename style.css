@@ -1,3 +1,13 @@
+/* Delete once I actually make the button*/
+#musicButton {
+    background: none; border: none; padding: 0; cursor: pointer; font-size: 70px; color: #ff5400; text-decoration: underline;
+}
+
+#musicButton:disabled {
+    cursor: not-allowed;
+    color: #404040;
+}
+
 @font-face {
     font-family: Determination;
     src: url("font/DTM-Sans.otf");
@@ -88,6 +98,10 @@ a {
 
 .grid #rightSide {
     border-left: 5px solid #ffffff;
+}
+
+.grid > #rightSide > #music {
+    border-bottom: 5px solid #ffffff;
 }
 
 .headerName {
