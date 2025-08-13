@@ -3,6 +3,16 @@ const defeat = new Audio("snd/snd_vaporized.wav");
 const lvlup = new Audio("snd/snd_levelup.wav");
 const eerie = new Audio("mus/nobodycame_yellow.ogg");
 const hurt = new Audio("snd/snd_ehurt1.wav");
+const hit = new  Audio("snd/snd_laz.wav");  
+
+const hdDalv = new Audio("mus/honeydew_dalv.ogg");
+const hdRuins = new Audio("mus/honeydew-ruins.ogg");
+const hdSnow = new Audio("mus/honeydew_snow.ogg");
+const mixin = new Audio("mus/mixin_it_up.ogg");
+const pipinHot = new Audio("mus/pipin_hot_yellow.ogg");
+const shop = new Audio("mus/shop.ogg");
+const moMoney = new Audio("mus/UNDERTALE YELLOW Soundtrack - 21 Mo Money.ogg");
+const macroLens = new Audio("mus/UNDERTALE YELLOW Soundtrack - 84 Through The Macro Lens.ogg");
 
 function hitRat() {
     const pfp = document.getElementById("pfp");
@@ -13,7 +23,7 @@ function hitRat() {
     gif.src = "anim/Hit.gif?" + new Date().getTime();
     gif.style.display = "block";
 
-    hitSound()
+    hit.play();
 
     setTimeout(() => {
         button.disabled = true;
@@ -41,7 +51,7 @@ function hitRat() {
 }
 
 function hitSound() {
-    var sound = new  Audio("snd/snd_laz.wav");  
+    
     sound.play();
 }
 
