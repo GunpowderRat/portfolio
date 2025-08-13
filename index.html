@@ -6,7 +6,6 @@
     <title>Portfolio | GunpowderRat</title>
     <link rel="icon" type="image/x-icon" href="img/Rat_avatar-circle.png">
     <link rel="stylesheet" href="style.css">
-    <script src="index.js"></script>
 </head>
 <body>
     <h1 style="margin-bottom: 0;">!!DANGER UP AHEAD <button onclick="WARNING()" style="background: none; border: none; padding: 0; cursor: pointer; font-size: 70px; color: #ff5400; text-decoration: underline;">WARNING</button>!! !!UNFINISHED W.I.P. <i>(WORK IN PROGRESS)</i> PORTFOLIO!!</h1>
@@ -80,7 +79,10 @@
         </div>
     </div>
 
+
     <hr style="margin-top: 20px; margin-bottom: 100px;">
+
+    <p id="currentTrack" style="text-align: right; margin-bottom: 10px; text-decoration: underline; font-style: italic;"></p>
 
     <div class="grid">
         <!-- Left side -->
@@ -93,7 +95,7 @@
                     <div id="healthBarProgress"></div>
                 </div>
                 <div id="pfpWrapper">
-                    <img id="pfp" src="img/Rat_avatar.png" alt="My profile picture">
+                    <img id="pfp" src="anim/Rat_avatar-moving.gif" alt="My profile picture. Instead of the usual one, now it moves up and down.">
                     <img id="pfpHit" src="anim/Hit.gif">
                 </div>
                 
@@ -142,7 +144,7 @@
                     <li><a href="https://aseprite.org/" target="_blank" rel="noopener noreferrer">Aseprite</a> (though I also recommend <a href="https://libresprite.github.io" target="_blank" rel="noopener noreferrer">LibreSprite</a>, the FOSS split of Aseprite!)</li>
                     <li><a href="https://www.audacityteam.org/" target="_blank" rel="noopener noreferrer">Audacity</a></li>
                     <li><a href="https://godotengine.org/" target="_blank" rel="noopener noreferrer">Godot</a> game engine</li>
-                    <li><a href="https://github.com/UnderminersTeam/UndertaleModTool" target="_blank" rel="noopener noreferrer">Undertale Mod Tool</a> (software for editing data.win files)</li>
+                    <li><a href="https://github.com/UnderminersTeam/UndertaleModTool" target="_blank" rel="noopener noreferrer">Undertale Mod Tool (software for editing data.win files)</a></li>
                     <li><a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a></li>
                     <li><a href="https://www.winehq.org/" target="_blank" rel="noopener noreferrer">Wine</a> + <a href="https://lutris.net/" target="_blank" rel="noopener noreferrer">Lutris</a></li>
                     <li>GNU/Linux Terminal <i>(of course)</i></li>
@@ -152,100 +154,129 @@
             </div>
         </div>
         <!-- Right side -->
-        <div id="rightSide" class="gridChild">
-            <span class="sectionHeader">CONTACTS</span>
-            <p>* Seeing nothing here fills you with... questions</p>
-            <br>
-            <p>Yes I will <i>eventually</i> put contacts here</p>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <p>You're still here?</p>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <p>I told you. I <i><u>will</u></i> do it</p>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <p>...</p>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <p>at some point .-.</p>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <p>seriously?</p>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <p>you're still going?</p>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            
-            <span id="trigger"></span>
+         <div id="rightSide">
+            <div id="music" class="gridChild">
+                <span class="sectionHeader">MUSIC</span>
+                <p style="color: grey; font-size: smaller;">Note: this isn't about my career as a composer [which I don't have], it's a music player</p>
+                <br>
+                <p>Yep. You read that right. Music.</p>
+                <br>
+                <p>Wanna hear it?</p>
+                <br>
+                <p>Alright. Here's the trick: think about music.</p>
+                <br>
+                <p>Just kiddin'!</p>
+                <br>
+                <p>Here's the button:</p>
+                <br><br><br>
+                <p>Oh, right. I didn't make it yet :P See ya once I do it!</p>
+                <br><br><br><br><br><br>
+                <p>Hmmm. I may as well call rightSide "emptySide"</p>
+                <br>
+                <p>You know what?</p>
+                <p>Here's a sample:</p>
+                <br>
+                <button id="musicButton" onclick="music()">button</button>
+                <br>
+                <p style="color: grey;">(Yes I did reuse the <u style="color: grey;">WARNING</u> "code")</p>
+            </div>
+
+            <div id="contacts" class="gridChild">
+                <span class="sectionHeader">CONTACTS</span>
+                <p>* Seeing nothing here fills you with... questions</p>
+                <br>
+                <p>Yes I will <i>eventually</i> put contacts here</p>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <p>You're still here?</p>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <p>I told you. I <i><u>will</u></i> do it</p>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <p>...</p>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <p>at some point .-.</p>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <p>seriously?</p>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <p>you're still going?</p>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                
+                <span id="trigger"></span>
 
 
-            <script>
-                const trigger = document.getElementById('trigger');
-                let condition = 0;
+                <script>
+                    const trigger = document.getElementById('trigger');
+                    let condition = 0;
 
-                const observer = new IntersectionObserver((entries) => {
-                    entries.forEach(entry => {
-                        if (entry.isIntersecting && condition === 0) {
-                            condition = 1;
-                            alert('But nobody came...');
-                        }
+                    const observer = new IntersectionObserver((entries) => {
+                        entries.forEach(entry => {
+                            if (entry.isIntersecting && condition === 0) {
+                                condition = 1;
+                                alert('But nobody came...');
+                            }
+                        });
+                    }, {
+                        root: null,
+                        threshold: 0.01
                     });
-                }, {
-                    root: null,
-                    threshold: 0.01
-                });
 
-                observer.observe(trigger);
-            </script>
+                    observer.observe(trigger);
+                </script>
 
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <p>OK, fine. I'll put my email address.</p>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <p>You earned it</p>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <p>Here it goes...</p>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <p>Juuuuuuuusssst a little more</p>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <p>Here it is:</p>
-            <p>!@#¬2$¬@gmail.#aµ</p>
-            <br><br>
-            <p>What do you mean?</p>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <p>...it... broke?</p>
-            <br><br>
-            <p>How? It's just tex-</p>
-            <br><br><br>
-            <p>oh</p>
-            <p>oh okay... i see it now</p>
-            <br><br><br>
-            <p>"!@#¬2$¬@gmail.#aµ"</p>
-            <br><br>
-            <p>that's weird</p>
-            <br><br><br>
-            <p>Well that's all FOLKS! See ya around in the NEXT episode. The Email address character will be included and be prevalent in our next show!</p>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <p>damnit. ye're really... determined... on getting that email, huh?</p>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <p>fine, I'll fix it</p>
-            <br>
-            <p>just give me a moment</p>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <p>* You hear mechanical sounds through the door</p>
-            <br>
-            <p>Note: the Door is not actually real. It is a metaphorical concept to express narrative</p>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <p>*Whirring*</p>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <p>Alright... I think it's fixed now</p>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <p>Aaaaaaaaaaaaannnnnnnnnnnnnnndddd</p>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <p>TADAAAAAA!!</p>
-            <br><br>
-            <p>Here it is</p>
-            <br><br><br><br><br><br><br><br><br><br>
-            <p>Your own [[PERSONAL TELEPHONE NUMBER]]</p>
-            <br><br><br><br>
-            <p class="remark">Email: ratgunpowder@gmail.com</p>
-            <br><br><br><br><br><br><br><br><br><br><br><br>
-            <p>See? I tould you I would do it...</p>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <p>OK, fine. I'll put my email address.</p>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <p>You earned it</p>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <p>Here it goes...</p>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <p>Juuuuuuuusssst a little more</p>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <p>Here it is:</p>
+                <p>!@#¬2$¬@gmail.#aµ</p>
+                <br><br>
+                <p>What do you mean?</p>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <p>...it... broke?</p>
+                <br><br>
+                <p>How? It's just tex-</p>
+                <br><br><br>
+                <p>oh</p>
+                <p>oh okay... i see it now</p>
+                <br><br><br>
+                <p>"!@#¬2$¬@gmail.#aµ"</p>
+                <br><br>
+                <p>that's weird</p>
+                <br><br><br>
+                <p>Well that's all FOLKS! See ya around in the NEXT episode. The Email address character will be included and be prevalent in our next show!</p>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <p>damnit. ye're really... determined... on getting that email, huh?</p>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <p>fine, I'll fix it</p>
+                <br>
+                <p>just give me a moment</p>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <p>* You hear mechanical sounds through the door</p>
+                <br>
+                <p>Note: the Door is not actually real. It is a metaphorical concept to express narrative</p>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <p>*Whirring*</p>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <p>Alright... I think it's fixed now</p>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <p>Aaaaaaaaaaaaannnnnnnnnnnnnnndddd</p>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <p>TADAAAAAA!!</p>
+                <br><br>
+                <p>Here it is</p>
+                <br><br><br><br><br><br><br><br><br><br>
+                <p>Your own [[PERSONAL TELEPHONE NUMBER]]</p>
+                <br><br><br><br>
+                <p class="remark">Email: ratgunpowder@gmail.com</p>
+                <br><br><br><br><br><br><br><br><br><br><br><br>
+                <p>See? I tould you I would do it...</p>
+            </div>
         </div>
     </div>
 </body>
+<script src="index.js"></script>
 </html>
