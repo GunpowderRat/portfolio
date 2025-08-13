@@ -6,7 +6,7 @@ const hurt = new Audio("snd/snd_ehurt1.wav");
 const hit = new  Audio("snd/snd_laz.wav");  
 
 const hdDalv = new Audio("mus/honeydew_dalv.ogg");
-const hdRuins = new Audio("mus/honeydew-ruins.ogg");
+const hdRuins = new Audio("mus/honeydew_ruins.ogg");
 const hdSnow = new Audio("mus/honeydew_snow.ogg");
 const mixin = new Audio("mus/mixin_it_up.ogg");
 const pipinHot = new Audio("mus/pipin_hot_yellow.ogg");
@@ -14,10 +14,84 @@ const shop = new Audio("mus/shop.ogg");
 const moMoney = new Audio("mus/UNDERTALE YELLOW Soundtrack - 21 Mo Money.ogg");
 const macroLens = new Audio("mus/UNDERTALE YELLOW Soundtrack - 84 Through The Macro Lens.ogg");
 
+const hdDalvName = " Honeydew Hideaway - Undertale Yellow Soundtrack - NoteBlock, MasterSwordRemix";
+const hdRuinsName = " Honeydew Ruins - Undertale Yellow Soundtrack - NoteBlock, Toby Fox";
+const hdSnowName = " Honeydew Snow - Undertale Yellow Soundtrack - NoteBlock";
+const mixinName = " Mixin' It Up - Undertale Yellow Soundtrack - emBer";
+const pipinHotName = " Pipin' Hot - Undertale Yellow (Unused) Soundtrack";
+const shopName = " Shop - Undertale Soundtrack - Toby Fox";
+const moMoneyName = " Mo Money - Undertale Yellow Soundtrack - NoteBlock";
+const macroLensName = " Through The Macro Lens - Undertale Yellow Soundtrack - MasterSwordRemix";
+
+var currentlyPlaying = "♫ - Playing:";
+
+var cTrack = document.getElementById("currentTrack");
+var soundtrack = [hdDalv, hdRuins, hdSnow, mixin, pipinHot, shop, moMoney, macroLens];
+
+function music() {
+    let i = Math.floor(Math.random() * 8);
+
+    soundtrack.forEach(audio => {
+        audio.pause();
+    });
+
+    switch (i) {
+        case 0:
+            hdDalv.play();
+            cTrack.textContent = currentlyPlaying + hdDalvName;
+            break;
+
+        case 1:
+            hdRuins.play();
+            cTrack.textContent = currentlyPlaying + hdRuinsName;
+            break;
+
+        case 2:
+            hdSnow.play();
+            cTrack.textContent = currentlyPlaying + hdSnowName;
+            break;
+
+        case 3:
+            mixin.play();
+            cTrack.textContent = currentlyPlaying + mixinName;
+            break;
+        
+        case 4:
+            pipinHot.play();
+            cTrack.textContent = currentlyPlaying + pipinHotName;
+            break;
+
+        case 5:
+            shop.play();
+            cTrack.textContent = currentlyPlaying + shopName;
+            break;
+
+        case 6:
+            moMoney.play();
+            cTrack.textContent = currentlyPlaying + moMoneyName;
+            break;
+
+        case 7:
+            macroLens.play();
+            cTrack.textContent = currentlyPlaying + macroLensName;
+            break;
+
+        default:
+            break;
+    }
+}
+
 function hitRat() {
     const pfp = document.getElementById("pfp");
     const gif = document.getElementById("pfpHit");
     const button = document.getElementById("FIGHT");
+
+    document.getElementById("musicButton").disabled = true;
+
+    soundtrack.forEach(audio => {
+        audio.pause();
+
+        });
 
     gif.src = "";
     gif.src = "anim/Hit.gif?" + new Date().getTime();
@@ -88,3 +162,7 @@ function depleteHealth() {
 function WARNING() {
     window.confirm("THIS IS A WARNING!!");
 }
+
+// randint between 0 - [NUMBER OF MUS].
+// automatically switch song after the current one ends
+// button to mute .play();
