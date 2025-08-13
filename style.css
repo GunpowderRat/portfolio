@@ -1,4 +1,3 @@
-/* I thought fonts didn't have faces! */
 @font-face {
     font-family: Determination;
     src: url("font/DTM-Sans.otf");
@@ -32,18 +31,29 @@ p {
     font-size: large;
 }
 
+li {
+    font-size: large;
+}
+
 a {
-    color: blue;
+    color: #5000e4;
 }
 
 .grid {
     margin: 30px;
+    border-top: 5px solid #ffffff;
 
     display: grid;
-    grid-template-columns: 400px 1fr 400px;
+    grid-template-columns: 350px 1fr 350px;
+    align-items: start;
 }
 
 .grid #description {
+    padding: 30px;
+    border-bottom: 5px solid #ffffff;
+}
+
+.grid #softwareKit {
     padding: 30px;
 }
 
@@ -51,8 +61,10 @@ a {
     padding: 30px;
 }
 
-#leftSide {
+.grid #leftSide {
     align-self: stretch;
+
+    padding: 30px;
 
     display: flex;
     flex-direction: column;
@@ -64,6 +76,12 @@ a {
 
 #rightSide {
     border-left: 5px solid #ffffff;
+}
+
+
+#middleWrapper {
+    display: flex;
+    flex-direction: column;
 }
 
 #subt {
@@ -87,7 +105,11 @@ a {
     border-width: 7px;
     border-radius: 50%;
     display: block;
+
+    transition: opacity 0.5s ease;
 }
+
+
 
 #pfpHit {
     position: absolute;
@@ -101,15 +123,19 @@ a {
 
 #dmgDealt {
     display: none;
+
+    transition: opacity 0.3s ease;
 }
 
 #healthBar {
-    margin-bottom: 10px;
+    display: none;
 
+    margin-bottom: 10px;
     width: 250px;
+    
     background-color: #404040;
 
-    display: none;
+    transition: opacity 0.3s ease;
 }
 
 #healthBarProgress {
@@ -129,6 +155,11 @@ a {
 
 #FIGHT:active img {
     content: url("img/UndertaleFightClick.png");
+}
+
+#FIGHT:disabled img{
+    content: url("img/UndertaleFightDeactivated.png");
+    cursor: not-allowed;
 }
 
 #pfpWrapper {
