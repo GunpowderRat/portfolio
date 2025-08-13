@@ -45,8 +45,6 @@ function hitSound() {
     sound.play();
 }
 
-let i = 0;
-
 function depleteHealth() {
     document.getElementById("healthBar").style.display = "block";
 
@@ -56,6 +54,7 @@ function depleteHealth() {
     dmg.src = "anim/dmgDealt.gif?" + new Date().getTime();
     dmg.style.display = "block";
 
+    let i = 0;
 
     if (i == 0) {
         i = 1;
