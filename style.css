@@ -39,8 +39,15 @@ a {
     color: #5000e4;
 }
 
+.remark {
+    color: #FFFF00;
+}
+
+.sectionHeader {
+    font-size: xx-large;
+}
+
 .grid {
-    margin: 30px;
     border-top: 5px solid #ffffff;
 
     display: grid;
@@ -48,31 +55,37 @@ a {
     align-items: start;
 }
 
-.grid #description {
+.gridChild {
     padding: 30px;
+}
+
+.grid #description {
     border-bottom: 5px solid #ffffff;
 }
 
-.grid #softwareKit {
-    padding: 30px;
-}
-
-.grid #rightSide {
-    padding: 30px;
-}
-
 .grid #leftSide {
+    border-right: 5px solid #ffffff;
+    
     align-self: stretch;
+}
 
-    padding: 30px;
-
+.grid > #leftSide > #leftSideIntroWrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
 
-    border-right: 5px solid #ffffff;
+    border-bottom: 5px solid #ffffff;
 }
+
+.headerName {
+    font-size: 50px;
+}
+
+.name {
+    font-size: 25px;
+}
+
 
 #rightSide {
     border-left: 5px solid #ffffff;
@@ -88,7 +101,6 @@ a {
     margin-top: 13px;
     margin-bottom: 10px;
 
-    color: #FFFF00;
     font-size: 20px;
     font-family: Determination;
 }
@@ -165,12 +177,4 @@ a {
 #pfpWrapper {
     position: relative;
     display: inline-block;
-}
-
-.headerName {
-    font-size: 50px;
-}
-
-.name {
-    font-size: 25px;
 }
