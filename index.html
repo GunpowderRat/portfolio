@@ -12,36 +12,116 @@
     <h1 style="margin-bottom: 0;">!!DANGER UP AHEAD <button onclick="WARNING()" style="background: none; border: none; padding: 0; cursor: pointer; font-size: 70px; color: #ff5400; text-decoration: underline;">WARNING</button>!! !!UNFINISHED W.I.P. <i>(WORK IN PROGRESS)</i> PORTFOLIO!!</h1>
     <span style="margin-top: 0; color: grey;">* give me some feedback please :P</span>
 
-    <hr style="margin-top: 20px; margin-bottom: 20px;">
+    <style>
+        .snowflake {
+            color: #fff;
+            font-size: 1em;
+            text-shadow: 0 0 5px #000;
+        }
+
+        .snowflake,.snowflake .inner{animation-iteration-count:infinite;animation-play-state:running}@keyframes snowflakes-fall{0%{transform:translateY(0)}100%{transform:translateY(110vh)}}@keyframes snowflakes-shake{0%,100%{transform:translateX(0)}50%{transform:translateX(80px)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;user-select:none;cursor:default;pointer-events:none;animation-name:snowflakes-shake;animation-duration:3s;animation-timing-function:ease-in-out}.snowflake .inner{animation-duration:10s;animation-name:snowflakes-fall;animation-timing-function:linear}.snowflake:nth-of-type(0){left:1%;animation-delay:0s}.snowflake:nth-of-type(0) .inner{animation-delay:0s}.snowflake:first-of-type{left:10%;animation-delay:1s}.snowflake:first-of-type .inner,.snowflake:nth-of-type(8) .inner{animation-delay:1s}.snowflake:nth-of-type(2){left:20%;animation-delay:.5s}.snowflake:nth-of-type(2) .inner,.snowflake:nth-of-type(6) .inner{animation-delay:6s}.snowflake:nth-of-type(3){left:30%;animation-delay:2s}.snowflake:nth-of-type(11) .inner,.snowflake:nth-of-type(3) .inner{animation-delay:4s}.snowflake:nth-of-type(4){left:40%;animation-delay:2s}.snowflake:nth-of-type(10) .inner,.snowflake:nth-of-type(4) .inner{animation-delay:2s}.snowflake:nth-of-type(5){left:50%;animation-delay:3s}.snowflake:nth-of-type(5) .inner{animation-delay:8s}.snowflake:nth-of-type(6){left:60%;animation-delay:2s}.snowflake:nth-of-type(7){left:70%;animation-delay:1s}.snowflake:nth-of-type(7) .inner{animation-delay:2.5s}.snowflake:nth-of-type(8){left:80%;animation-delay:0s}.snowflake:nth-of-type(9){left:90%;animation-delay:1.5s}.snowflake:nth-of-type(9) .inner{animation-delay:3s}.snowflake:nth-of-type(10){left:25%;animation-delay:0s}.snowflake:nth-of-type(11){left:65%;animation-delay:2.5s}
+
+    </style>
+
+    <div class="snowflakes" aria-hidden="true">
+        <div class="snowflake">
+            <div class="inner">❅</div>
+        </div>
+        <div class="snowflake">
+            <div class="inner">❅</div>
+        </div>
+        <div class="snowflake">
+            <div class="inner">❅</div>
+        </div>
+        <div class="snowflake">
+            <div class="inner">❅</div>
+        </div>
+        <div class="snowflake">
+            <div class="inner">❅</div>
+        </div>
+        <div class="snowflake">
+            <div class="inner">❅</div>
+        </div>
+        <div class="snowflake">
+            <div class="inner">❅</div>
+        </div>
+        <div class="snowflake">
+            <div class="inner">❅</div>
+        </div>
+        <div class="snowflake">
+            <div class="inner">❅</div>
+        </div>
+        <div class="snowflake">
+            <div class="inner">❅</div>
+        </div>
+        <div class="snowflake">
+            <div class="inner">❅</div>
+        </div>
+        <div class="snowflake">
+            <div class="inner">❅</div>
+        </div>
+                <div class="snowflake">
+            <div class="inner">❅</div>
+        </div>
+        <div class="snowflake">
+            <div class="inner">❅</div>
+        </div>
+        <div class="snowflake">
+            <div class="inner">❅</div>
+        </div>
+        <div class="snowflake">
+            <div class="inner">❅</div>
+        </div>
+        <div class="snowflake">
+            <div class="inner">❅</div>
+        </div>
+        <div class="snowflake">
+            <div class="inner">❅</div>
+        </div>
+    </div>
+
+    <hr style="margin-top: 20px; margin-bottom: 100px;">
 
     <div class="grid">
         <!-- Left side -->
         <div id="leftSide">
-            <img id="dmgDealt" src="anim/dmgDealt.gif">
-            <div id="healthBar">
-                <div id="healthBarProgress"></div>
+
+            <div id="leftSideIntroWrapper" class="gridChild">
+
+                <img id="dmgDealt" src="anim/dmgDealt.gif">
+                <div id="healthBar">
+                    <div id="healthBarProgress"></div>
+                </div>
+                <div id="pfpWrapper">
+                    <img id="pfp" src="img/Rat_avatar.png" alt="My profile picture">
+                    <img id="pfpHit" src="anim/Hit.gif">
+                </div>
+                
+                <p class="headerName" style="text-decoration: underline;">RAT</p>
+                <p id="subt" class="remark">a.k.a.</p>
+                <p class="name">* GunpowderRat</p>
+                <p class="name">* Rat with the plague</p>
+                <p class="name">* Medieval Rat</p>
+                <p class="name">* Sabot</p>
+                <p class="name">* Bluigi</p>
+                
+                <button onclick="hitRat()" id="FIGHT" style="background: none; border: none; padding: 0; cursor: pointer;">
+                    <img src="img/UndertaleFight.png" alt="A replica of the Undertale FIGHT button.">
+                </button>
             </div>
-            <div id="pfpWrapper">
-                <img id="pfp" src="img/Rat_avatar.png" alt="My profile picture">
-                <img id="pfpHit" src="anim/Hit.gif">
+
+            <div id="credits" class="gridChild">
+                <span class="sectionHeader">CREDITS</span>
+                <ul>
+                    <li><span class="remark">pajasevi</span>: <a href="https://github.com/pajasevi/CSSnowflakes?tab=readme-ov-file" target="_blank" rel="noopener noreferrer">CSSnowflakes</a></li>
+                </ul>
             </div>
-            
-            <p class="headerName" style="text-decoration: underline;">RAT</p>
-            <p id="subt">a.k.a.</p>
-            <p class="name">* GunpowderRat</p>
-            <p class="name">* Rat with the plague</p>
-            <p class="name">* Medieval Rat</p>
-            <p class="name">* Sabot</p>
-            <p class="name">* Bluigi</p>
-            
-            <button onclick="hitRat()" id="FIGHT" style="background: none; border: none; padding: 0; cursor: pointer;">
-                <img src="img/UndertaleFight.png" alt="A replica of the Undertale FIGHT button.">
-            </button>
         </div>
         <!-- Middle -->
         <div id="middleWrapper">
-            <div id="description">
-                <span style="font-size: xx-large;">ABOUT ME</span>
+
+            <div id="description" class="gridChild">
+                <span class="sectionHeader">ABOUT ME</span>
                 <p>Just some amateur trying to learn pixel art and software engineering (I know the general logic of programming languages, though I'm not really knowledgeable in them, yet)... and maybe a little game design sprinkled on top when I get a chance.</p>
                 <br>
                 <p>I try to learn everything by myself... not like I have a choice in that, though :P</p>
@@ -51,8 +131,8 @@
                 <p>And, not to get "too political" in my portfolio, but I like it when stuff is organised horizontally, and people's voices are heard. Take a look at <a href="https://en.wikipedia.org/wiki/Sociocracy" target="_blank" rel="noopener noreferrer">sociocracy</a>, to get a slight idea of what I mean.</p>
             </div>
 
-            <div id="softwareKit">        
-                <span style="font-size: xx-large;">SOFTWARE KIT</span>
+            <div id="softwareKit" class="gridChild">        
+                <span class="sectionHeader">SOFTWARE KIT</span>
                 <p>My software kit consists [mostly] of [FOSS]:</p>
                 <br>
                 <ul>
@@ -70,8 +150,8 @@
             </div>
         </div>
         <!-- Right side -->
-        <div id="rightSide">
-            <span style="font-size: xx-large;">CONTACTS</span>
+        <div id="rightSide" class="gridChild">
+            <span class="sectionHeader">CONTACTS</span>
             <p>* Seeing nothing here fills you with... questions</p>
             <br>
             <p>Yes I will <i>eventually</i> put contacts here</p>
@@ -160,7 +240,7 @@
             <br><br><br><br><br><br><br><br><br><br>
             <p>Your own [[PERSONAL TELEPHONE NUMBER]]</p>
             <br><br><br><br>
-            <p style="color: #FFFF00;">Email: ratgunpowder@gmail.com</p>
+            <p class="remark">Email: ratgunpowder@gmail.com</p>
             <br><br><br><br><br><br><br><br><br><br><br><br>
             <p>See? I tould you I would do it...</p>
         </div>
