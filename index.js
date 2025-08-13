@@ -1,7 +1,9 @@
 function hitRat() {
-    var damage = new Audio("snd/snd_damage.wav");
-    var defeat = new Audio("snd/snd_vaporized.wav");
-    var lvlup = new Audio("snd/snd_levelup.wav");
+    let damage = new Audio("snd/snd_damage.wav");
+    let defeat = new Audio("snd/snd_vaporized.wav");
+    let lvlup = new Audio("snd/snd_levelup.wav");
+    let eerie = new Audio("mus/nobodycame_yellow.ogg");
+    let hurt = new Audio("snd/snd_ehurt1.wav");
     const pfp = document.getElementById("pfp");
     const gif = document.getElementById("pfpHit");
     const button = document.getElementById("FIGHT");
@@ -16,6 +18,7 @@ function hitRat() {
         button.disabled = true;
         gif.style.display = "none";
         damage.play();
+        hurt.play();
         depleteHealth();
     }, 500);
 
@@ -32,8 +35,8 @@ function hitRat() {
     }, 2000);
 
     setTimeout(() => {
-
-    }, 100000)
+        eerie.play();
+    }, 6000)
 }
 
 function hitSound() {
