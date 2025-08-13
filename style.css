@@ -63,6 +63,10 @@ a {
     border-bottom: 5px solid #ffffff;
 }
 
+.grid #softwareKit {
+    border-bottom: 5px solid #ffffff;
+}
+
 .grid #leftSide {
     border-right: 5px solid #ffffff;
     
@@ -78,6 +82,14 @@ a {
     border-bottom: 5px solid #ffffff;
 }
 
+.grid > #leftSide > #credits {
+    border-bottom: 5px solid #ffffff;
+}
+
+.grid #rightSide {
+    border-left: 5px solid #ffffff;
+}
+
 .headerName {
     font-size: 50px;
 }
@@ -85,12 +97,6 @@ a {
 .name {
     font-size: 25px;
 }
-
-
-#rightSide {
-    border-left: 5px solid #ffffff;
-}
-
 
 #middleWrapper {
     display: flex;
