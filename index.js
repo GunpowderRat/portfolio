@@ -1,8 +1,10 @@
 function hitRat() {
-    var damage = new Audio("snd/snd_damage.wav")
-    var defeat = new Audio("snd/snd_vaporized.wav") 
+    var damage = new Audio("snd/snd_damage.wav");
+    var defeat = new Audio("snd/snd_vaporized.wav");
+    var lvlup = new Audio("snd/snd_levelup.wav");
     const pfp = document.getElementById("pfp");
     const gif = document.getElementById("pfpHit");
+    const button = document.getElementById("FIGHT");
 
     gif.src = "";
     gif.src = "anim/Hit.gif?" + new Date().getTime();
@@ -11,15 +13,27 @@ function hitRat() {
     hitSound()
 
     setTimeout(() => {
+        button.disabled = true;
         gif.style.display = "none";
         damage.play();
         depleteHealth();
     }, 500);
 
     setTimeout(() => {
+        document.getElementById("pfp").style.opacity = "0";
         defeat.play();
-        document.getElementById("FIGHT");
     }, 1000);
+
+    setTimeout(() => {
+        document.getElementById("healthBar").style.opacity = "0";
+        document.getElementById("dmgDealt").style.opacity = "0";
+
+        lvlup.play();
+    }, 2000);
+
+    setTimeout(() => {
+
+    }, 100000)
 }
 
 function hitSound() {
@@ -59,5 +73,5 @@ function depleteHealth() {
 }
 
 function WARNING() {
-    window.confirm("THIS IS A WARNING!");
+    window.confirm("THIS IS A WARNING!!");
 }
