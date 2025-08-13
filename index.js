@@ -1,9 +1,10 @@
+const damage = new Audio("snd/snd_damage.wav");
+const defeat = new Audio("snd/snd_vaporized.wav");
+const lvlup = new Audio("snd/snd_levelup.wav");
+const eerie = new Audio("mus/nobodycame_yellow.ogg");
+const hurt = new Audio("snd/snd_ehurt1.wav");
+
 function hitRat() {
-    let damage = new Audio("snd/snd_damage.wav");
-    let defeat = new Audio("snd/snd_vaporized.wav");
-    let lvlup = new Audio("snd/snd_levelup.wav");
-    let eerie = new Audio("mus/nobodycame_yellow.ogg");
-    let hurt = new Audio("snd/snd_ehurt1.wav");
     const pfp = document.getElementById("pfp");
     const gif = document.getElementById("pfpHit");
     const button = document.getElementById("FIGHT");
