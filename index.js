@@ -87,6 +87,7 @@ function hitRat() {
     const button = document.getElementById("FIGHT");
 
     document.getElementById("musicButton").disabled = true;
+    cTrack.textContent = currentlyPlaying + " ...";
 
     soundtrack.forEach(audio => {
         audio.pause();
