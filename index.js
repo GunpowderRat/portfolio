@@ -10,7 +10,6 @@ const hdRuins = new Audio("mus/honeydew_ruins.ogg");
 const hdSnow = new Audio("mus/honeydew_snow.ogg");
 const mixin = new Audio("mus/mixin_it_up.ogg");
 const pipinHot = new Audio("mus/pipin_hot_yellow.ogg");
-const shop = new Audio("mus/shop.ogg");
 const moMoney = new Audio("mus/UNDERTALE YELLOW Soundtrack - 21 Mo Money.ogg");
 const macroLens = new Audio("mus/UNDERTALE YELLOW Soundtrack - 84 Through The Macro Lens.ogg");
 
@@ -19,17 +18,16 @@ const hdRuinsName = " Honeydew Ruins - Undertale Yellow Soundtrack - NoteBlock, 
 const hdSnowName = " Honeydew Snow - Undertale Yellow Soundtrack - NoteBlock";
 const mixinName = " Mixin' It Up - Undertale Yellow Soundtrack - emBer";
 const pipinHotName = " Pipin' Hot - Undertale Yellow (Unused) Soundtrack";
-const shopName = " Shop - Undertale Soundtrack - Toby Fox";
 const moMoneyName = " Mo Money - Undertale Yellow Soundtrack - NoteBlock";
 const macroLensName = " Through The Macro Lens - Undertale Yellow Soundtrack - MasterSwordRemix";
 
 var currentlyPlaying = "♫ - Playing:";
 
 var cTrack = document.getElementById("currentTrack");
-var soundtrack = [hdDalv, hdRuins, hdSnow, mixin, pipinHot, shop, moMoney, macroLens];
+var soundtrack = [hdDalv, hdRuins, hdSnow, mixin, pipinHot, moMoney, macroLens];
 
 function music() {
-    let i = Math.floor(Math.random() * 8);
+    let i = Math.floor(Math.random() * 7);
 
     soundtrack.forEach(audio => {
         audio.pause();
@@ -62,16 +60,11 @@ function music() {
             break;
 
         case 5:
-            shop.play();
-            cTrack.textContent = currentlyPlaying + shopName;
-            break;
-
-        case 6:
             moMoney.play();
             cTrack.textContent = currentlyPlaying + moMoneyName;
             break;
 
-        case 7:
+        case 6:
             macroLens.play();
             cTrack.textContent = currentlyPlaying + macroLensName;
             break;
